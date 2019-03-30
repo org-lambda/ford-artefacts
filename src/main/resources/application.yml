@@ -1,0 +1,34 @@
+server:
+  servlet:
+    context-path: /ford
+  port: 8080
+
+
+
+swagger2:
+  details:
+    title: Ford-UK POC
+    description: This is a miniature POC for FORD-UK
+    termsOfServiceUrl:  Ford terms Of Service Url
+    name:  Soumojit Acharyya
+    url:  https://www.baeldung.com/swagger-2-documentation-for-spring-rest-api
+    email:  acharyyasoumojit@gmail.com
+    license:  licenced
+    licenseUrl: Ford license Url
+    version:  1.0
+
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  datasource:
+    url: jdbc:h2:file:~/testdb
+    username: sa
+    password: admin
+    driver-class-name: org.h2.Driver
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
