@@ -24,7 +24,7 @@ public class FordController {
     private FordService fordService;
 
     @Autowired
-    public void FordController(FordService fordService){
+    public FordController(FordService fordService){
         this.fordService = fordService;
     }
 

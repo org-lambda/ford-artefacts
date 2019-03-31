@@ -21,7 +21,7 @@ public class FordService {
     private ModelMapper modelMapper;
 
     @Autowired
-    public void FordService(StudentRepositoryInterface studentRepository, ModelMapper modelMapper){
+    public FordService(StudentRepositoryInterface studentRepository, ModelMapper modelMapper){
         this.studentRepository = studentRepository;
         this.modelMapper = modelMapper;
     }

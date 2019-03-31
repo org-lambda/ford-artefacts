@@ -14,18 +14,17 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 //@WebMvcTest(FordController.class)
 public class FordControllerTest extends FordApplicationTests{
 
-    @MockBean
-    private FordService service;
+
 
     @Test
     public void retrieveTest01() throws Exception{
         RequestBuilder requestBuilder = MockMvcRequestBuilders.get(
-                "/ford/retrieve").accept(
-                MediaType.APPLICATION_JSON);
+                "/retrieve/");
 
         MvcResult result = mockMvc.perform(requestBuilder).andReturn();
         Assert.assertNotNull(result);
